@@ -1,0 +1,11 @@
+<h1>Add new task</h1>
+<!-- app/views/restaurants/edit.html.erb -->
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.submit %>
+<% end %>
